@@ -1,0 +1,65 @@
+<head>
+  <script>
+    .content {
+    background-color: yellow;    
+    }
+
+    .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+
+    background-color: red;
+    }
+
+    .cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+
+    background-color: green;
+    border: 1px solid red;
+    text-align: center;
+    }
+    
+    .myFlexedImage {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  }
+    
+  </script>
+</head>
+
+<div class="content">
+  <div class="row"> 
+    <div class="cell">
+      <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSiefG6qoOI-5ts-nfrO3Su75A32xJZFNhqsPCM-GRqNnoxQO8Y9xbG5L9r/pubchart?oid=357720767&format=image"/>
+    </div>
+    <div class="cell">
+      <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSiefG6qoOI-5ts-nfrO3Su75A32xJZFNhqsPCM-GRqNnoxQO8Y9xbG5L9r/pubchart?oid=1640480723&format=image"/>
+    </div>
+  </div>
+</div>
