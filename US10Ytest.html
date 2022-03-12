@@ -19,7 +19,7 @@
         ticker: function(min, max, pixels, opts, dygraph, vals) {
           var your_value = 1.75;
           var tickers = Dygraph.numericTicks(min, max, pixels, opts, dygraph, vals);
-          tickers.push({v: your_value, label: '%'});
+          tickers.push({v: your_value});
 
           return tickers;
         }
