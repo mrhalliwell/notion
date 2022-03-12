@@ -6,21 +6,12 @@
   
 <body>
 
-<div id="US10Y" style="width:500px; height:300px;"></div>
+<div id="US10Y"></div>
 <script type="text/javascript">
   
   stockchart = new Dygraph(
     document.getElementById("US10Y"),
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSiefG6qoOI-5ts-nfrO3Su75A32xJZFNhqsPCM-GRqNnoxQO8Y9xbG5L9r/pub?gid=0&single=true&output=csv",
-    {
-      showRoller: true,
-      customBars: true,
-      labelsKMB: true,
-      drawCallback: function(g, is_initial) {
-        if (!is_initial) return;
-        g.setAnnotations( stock_annotations );
-      }
-    }
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSiefG6qoOI-5ts-nfrO3Su75A32xJZFNhqsPCM-GRqNnoxQO8Y9xbG5L9r/pub?gid=0&single=true&output=csv"
   )
 </script>
 
