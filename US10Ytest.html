@@ -13,19 +13,7 @@
     document.getElementById("US10Y"),
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSiefG6qoOI-5ts-nfrO3Su75A32xJZFNhqsPCM-GRqNnoxQO8Y9xbG5L9r/pub?gid=0&single=true&output=csv",
 
-    {
-    axes: {
-      y: {
-        ticker: function(min, max, pixels, opts, dygraph, vals) {
-          var your_value = 0.5;
-          var tickers = Dygraph.numericTicks(min, max, pixels, opts, dygraph, vals);
-          tickers.push({v: your_value});
-
-          return tickers;
-        }
-      }
-    }
-  });
+);
     
 </script>
 
