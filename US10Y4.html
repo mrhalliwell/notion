@@ -27,7 +27,7 @@ d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSS-AHAVA-D9TVKRuJOoUSie
 
   // When reading the csv, I must format variables:
   function(d){
-    return { "Observation Date" : d3.timeParse("%Y-%m-%d")(d.date), "Observation Value" : d.value }
+    return { date : d3.timeParse("%Y-%m-%d")(d.date), value : d.value }
   },
 
   // Now I can use this dataset:
